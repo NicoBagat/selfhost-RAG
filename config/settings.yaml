@@ -1,0 +1,23 @@
+ollama:
+  host: "http://localhost:11434"   # override: OLLAMA_HOST
+  model: "gemma3:4b"               # override: OLLAMA_MODEL
+  embed_model: "nomic-embed-text"  # override: OLLAMA_EMBED_MODEL
+  temperature: 0.2
+  context_window: 8192
+
+mcp:
+  obsidian:
+    command: "uvx"
+    args: ["mcp-obsidian"]
+    # OBSIDIAN_API_KEY / OBSIDIAN_HOST / OBSIDIAN_PORT come from .env
+
+rag:
+  vault_path: "~/obsidian-vault"   # override: VAULT_PATH
+  chunk_size: 512
+  chunk_overlap: 64
+  top_k: 5
+  chroma_persist_dir: "./chroma_db"
+
+ui:
+  window_title: "Obsidian RAG"
+  theme: "dark"

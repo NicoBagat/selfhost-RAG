@@ -1,0 +1,17 @@
+local-obsidian-RAG/
+├── app/
+│   ├── ollama_client.py     [x] Phase 1 (unchanged)
+│   ├── mcp_client.py        [x]  Phase 3 stub
+│   ├── orchestrator.py      []  Phase 4 stub
+│   ├── rag/
+│   │   ├── embedder.py      [x] Phase 2
+│   │   ├── indexer.py       [x] Phase 2
+│   │   └── retriever.py     [x] Phase 2
+│   └── ui/
+│       └── chat_window.py   []  Phase 5 stub
+├── tests/
+│   └── test_ollama_client.py [x] 35 tests, 35 passing
+├── docs/
+├── config/settings.yaml
+├── main.py
+└── pyproject.toml

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidian-rag"
+version = "0.1.0"
+description = "Local RAG system over an Obsidian vault via Ollama + MCP"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "ollama>=0.3.0",
+    "chromadb>=0.5.0",
+    "PyQt6>=6.7.0",
+    "pyyaml>=6.0",
+    "watchdog>=4.0.0",
+    "rank-bm25>=0.2.2",
+    "python-frontmatter>=1.1",
+    "qasync>=0.27",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
