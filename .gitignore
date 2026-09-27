@@ -42,3 +42,6 @@ htmlcov/
 
 # ruff
 .ruff_cache/
+
+# Claude Code local context — never commit
+CLAUDE.md
