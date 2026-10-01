@@ -8,7 +8,7 @@ local-obsidian-RAG/
 │   │   ├── indexer.py       [x] Phase 2
 │   │   └── retriever.py     [x] Phase 2
 │   └── ui/
-│       └── chat_window.py   []  Phase 5 stub
+│       └── chat_window.py   [x]  Phase 5
 ├── tests/
 │   └── test_ollama_client.py [x] 35 tests, 35 passing
 ├── docs/
